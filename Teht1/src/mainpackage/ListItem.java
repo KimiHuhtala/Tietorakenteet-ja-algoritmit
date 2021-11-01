@@ -26,6 +26,6 @@ public class ListItem {
 
     @Override
     public String toString(){
-        return this.data + ", Next: " + this.next;
+        return this.data + ", Seuraava: " + this.next;
     }
 }

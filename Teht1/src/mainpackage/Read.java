@@ -15,7 +15,7 @@ public class Read {
                 value = stdin.readLine();
                 ok = true;
             } catch (Exception e) {
-                System.out.println("Exception when reading value. Give a new value.");
+                System.out.println("Virhe luettaessa arvoa, anna uusi arvo.");
                 ok = false;
             }
         }
@@ -31,7 +31,7 @@ public class Read {
                 value = Integer.parseInt(stdin.readLine());
                 ok = true;
             } catch (Exception e) {
-                System.out.println("Incompatible integer, Give a new value.");
+                System.out.println("Väärä arvo, anna uusi.");
                 ok = false;
             }
         }
@@ -47,7 +47,7 @@ public class Read {
                 value = Double.parseDouble(stdin.readLine());
                 ok = true;
             } catch (Exception e) {
-                System.out.println("Incompatible double, Give a new value.");
+                System.out.println("Yhteensopimaton arvo.");
                 ok = false;
             }
         }

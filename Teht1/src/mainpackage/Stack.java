@@ -9,10 +9,6 @@ public class Stack {
         this.size = 0;
     }
 
-    /**
-     * Create a new member to the list and set it as the top member
-     * @param data {String} information that will be stored
-     */
     public void push(String data){
         ListItem item = new ListItem();
         item.setNext(this.top);
@@ -21,10 +17,6 @@ public class Stack {
         this.size++;
     }
 
-    /**
-     * Remove the first member of the list and return its value
-     * @return {mainpackage.ListItem} value of the first member of the stack, if stack is empty return null
-     */
     public ListItem pop(){
         if(this.top == null)
             return null;
@@ -34,12 +26,9 @@ public class Stack {
         return poppedItem;
     }
 
-    /**
-     * Print out the data inside of the list without changing anything in the list.
-     */
     public void printItems(){
         if(this.top == null){
-            System.out.println("mainpackage.Stack is empty");
+            System.out.println("Pino on tyhjä");
             return;
         }
         ListItem item = this.top;
@@ -49,10 +38,6 @@ public class Stack {
         }
     }
 
-    /**
-     * Returns the size of the stack
-     * @return {int} size of the stack
-     */
     public int size(){
         return this.size;
     }
