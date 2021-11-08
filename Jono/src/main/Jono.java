@@ -42,7 +42,7 @@ public class Jono {
         }
         ListItem item = this.head;
         while(item != null) {
-            System.out.println(item);
+            System.out.print(item.getData()+", ");
             item = item.getNext();
         }
     }
