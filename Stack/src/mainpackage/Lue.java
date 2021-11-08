@@ -1,4 +1,4 @@
-package stackiterator;
+package mainpackage;
 
 import java.io.*;
 

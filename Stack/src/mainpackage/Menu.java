@@ -3,21 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package stackiterator;
+package mainpackage;
 
 public class Menu {
-//main alkaa-----------------------------------------------------------------------------
+
         public static void main(String[] args) {
-
                         printMenu();
-
         }
-//main loppuu --------------------------------------------------------------------------
-//printMenu alkaa------------------------------------------------------------------
+
         private static void printMenu() {
                 char select;
-                Stack s = new Stack(); // pino-olio
-                String data; // Pinon data-kenttä
+                Stack s = new Stack();
+                String data;
                 do {
 
                         System.out.println("\n\t\t\t1. Alkion lisääminen.");
@@ -52,5 +49,4 @@ public class Menu {
                 }
                 while (select != '5');
         }
-//printMenu loppuu ----------------------------------------------------------------
 }

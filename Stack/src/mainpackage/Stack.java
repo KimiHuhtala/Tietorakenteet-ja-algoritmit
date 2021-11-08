@@ -1,8 +1,8 @@
-package stackiterator;
+package mainpackage;
 
 public class Stack {
 
-        ListItem top; // top näkyy oletuspakkaukseen
+        ListItem top;
         private int size;
 
         public Stack() {
@@ -10,19 +10,18 @@ public class Stack {
                 size = 0;
         }
 
-        // muodostetaan uusi alkio ja viedään se huipulle
         public void push(String aData) {
-                ListItem newItem = new ListItem(); // luodaan uusi lista-alkio
+                ListItem newItem = new ListItem();
                 newItem.setData(aData);
-                newItem.setLink(top); // kytketään uusi alkio aikaisempaan huippualkioon
-                top = newItem; // uusi alkio pinon 1:ksi
+                newItem.setLink(top);
+                top = newItem;
                 size++;
         }
-        // poistetaan alkio pinon huipulta, jos pinossa ei alkioita palautetaan null
+
         public ListItem pop() {
                 ListItem takeAway;
                 if (top == null) {
-                        takeAway = null; // pino on tyhjä
+                        takeAway = null;
                 }
                 else
                 {
@@ -32,11 +31,11 @@ public class Stack {
                 }
                 return takeAway;
         }
-        // palautetaan pinottujen alkioiden lukumäärä
+
         public int getSize() {
                 return size;
         }
-        // listataan sisältö
+
         public void printItems() {
                 ListItem lPointer = top;
                 while (lPointer != null) {
