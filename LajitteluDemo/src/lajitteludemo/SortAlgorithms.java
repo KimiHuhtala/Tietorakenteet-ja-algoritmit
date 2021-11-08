@@ -1,23 +1,15 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package lajitteludemo;
 
-/**
- *
- * @author kamaj
- */
 import java.util.Random;
 
 public class SortAlgorithms {
-    final static int MAX=20000;
+    final static int MAX=10000;
     static long laskuri=0;
 
     public static void main(String[] args) {
-        //selectSort();
-        //laskuri=0;
+        selectSort();
+        laskuri=0;
         mergeSort();
         laskuri=0;
         quickSort();
@@ -31,11 +23,12 @@ public class SortAlgorithms {
         System.out.println("Generoidaan syöttöaineisto: ");
         for (i=0;i<MAX;i++) {
 
-            taul[i] = r.nextInt(1000); //generoidaan luvut
+            taul[i] = r.nextInt(1000);
             System.out.print(taul[i]+" ");
-            if (i>0 && i%40==0) // rivinvaihto
+            if (i>0 && i%40==0)
                 System.out.println();
         }
+
         System.out.println("\nSuoritetaan valintalajittelu, paina Enter ");
         Lue.merkki();
         laskuri++; //Ulompi for lause
@@ -96,6 +89,8 @@ public class SortAlgorithms {
                 System.out.println();
             laskuri++;
         }
+        System.out.println("\nKuittaa tulos, paina Enter, (Laskuri= "+laskuri+")");
+        Lue.merkki();
     }
 
     private static int[] tau = new int[MAX]; // aputaulukko (ei varata tätä pinosta!)
@@ -154,6 +149,7 @@ public class SortAlgorithms {
             }
             laskuri++;
         }
+
         System.out.println("\nJärjestellään käyttämällä Quicksorttia, paina Enter");
         Lue.merkki();
         qs(taulukko, MAX);
@@ -204,12 +200,11 @@ public class SortAlgorithms {
         for (int i = 0; i < values; i++) {
             System.out.print(table[i] + " ");
             laskuri++;
-            if (i > 0 && i % 40 == 0) { // rivinvaihto
+            if (i > 0 && i % 40 == 0) {
                 System.out.println();
             }
             laskuri++;
         }
     }
-
 }
 

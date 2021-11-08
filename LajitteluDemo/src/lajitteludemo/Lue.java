@@ -1,35 +1,12 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package lajitteludemo;
 
-/**
- *
- * @author kamaj
- */
 import java.io.*;
 public class Lue {
-/*************************************** Arto Wikla 1998**********
-
-Lukurutiinit kirjaan Ohjelmoinnin perusteet Java-kielellä
-
-LUOKKA on JAVAN VERSIOILLE 1.1.*
-
-Operaatiot:   Lue.rivi()    antaa seuraavan syöttörivin    (String)
-              Lue.kluku()     "      "      kokonaisluvun  (int)
-              Lue.dluku()     "      "      desimaaliluvun (double)
-              Lue.merkki()  antaa seuraavan syöttörivin ensimmäisen
-merkin
-
-Operaatiot ovat sitkeitä, ne VAATIVAT kelvollisen syötteen!
-******************************************************************/
 
   static BufferedReader stdin =
      new BufferedReader(new InputStreamReader(System.in));
 
-/******************************************************************/
 
   public static String rivi() {
     String arvo=null;
@@ -46,7 +23,7 @@ Operaatiot ovat sitkeitä, ne VAATIVAT kelvollisen syötteen!
     while (!ok);
     return arvo;
   }
-/******************************************************************/
+
 
   public static int kluku() {
     int arvo=-1;
@@ -64,8 +41,6 @@ Operaatiot ovat sitkeitä, ne VAATIVAT kelvollisen syötteen!
     return arvo;
   }
 
-/*******************************************************************/
-
   public static double dluku() {
     double arvo=-1;
     boolean ok;
@@ -81,7 +56,6 @@ Operaatiot ovat sitkeitä, ne VAATIVAT kelvollisen syötteen!
     while (!ok);
     return arvo;
   }
-/*******************************************************************/
 
   public static char merkki() {
     String rivi = rivi();
