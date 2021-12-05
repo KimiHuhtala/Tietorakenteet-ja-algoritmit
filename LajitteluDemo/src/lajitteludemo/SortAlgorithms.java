@@ -4,7 +4,7 @@ package lajitteludemo;
 import java.util.Random;
 
 public class SortAlgorithms {
-    final static int MAX=10000;
+    final static int MAX=30000;
     static long laskuri=0;
 
     public static void main(String[] args) {
@@ -57,6 +57,7 @@ public class SortAlgorithms {
             System.out.print(taul[i]+" ");
             if (i>0 && i%40==0) // rivinvaihto
                 System.out.println();
+            laskuri++;
         }
         System.out.println("\nKuittaa tulos, paina Enter, (Laskuri= "+laskuri+")");
         Lue.merkki();
@@ -100,6 +101,7 @@ public class SortAlgorithms {
         //i osoittaa 1. osataulukkoa, j osoittaa 2. osataulukkoa
         // k osoittaa aputaulukkoa, johon yhdiste kirjoitetaan.
         int i=p, j=q+1, k=0;
+        laskuri++;
         while(i<q+1 && j<r+1) {
                 if (t[i]<t[j]) {
                         tau[k++]=t[i++];
@@ -117,6 +119,7 @@ public class SortAlgorithms {
         for (i=0;i<k;i++) {
                 t[p+i]=tau[i];
         }
+        laskuri++;
     }
 
     public static void mergeSort(int t[],  int alku,  int loppu) {
@@ -168,11 +171,11 @@ public class SortAlgorithms {
             while (table[lo] < mid) {
                 ++lo;
             }
-
+            laskuri++;
             while (table[hi] > mid) {
                 --hi;
             }
-
+            laskuri++;
             if (lo <= hi) {
                 swap = table[lo];
                 table[lo] = table[hi];
