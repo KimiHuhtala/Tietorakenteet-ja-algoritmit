@@ -3,6 +3,10 @@ package mainpackage;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+/**
+ * @author Kimi Huhtala
+ */
+
 public class Read {
 
     static BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));

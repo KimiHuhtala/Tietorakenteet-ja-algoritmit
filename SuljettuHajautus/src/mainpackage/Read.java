@@ -1,4 +1,4 @@
-package main;
+package mainpackage;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -35,7 +35,7 @@ public class Read {
                 value = Integer.parseInt(stdin.readLine());
                 ok = true;
             } catch (Exception e) {
-                System.out.println("Incompatible integer, Give a new value.");
+                System.out.println("Incompatible integer. Give a new value.");
                 ok = false;
             }
         }

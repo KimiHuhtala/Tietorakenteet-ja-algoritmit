@@ -3,8 +3,7 @@ package main;
 import java.util.Random;
 
 /**
- * Translated to English from Finnish
- * @author kamaj
+ * @author Kimi Huhtala
  */
 
 public class SortAlgorithms {

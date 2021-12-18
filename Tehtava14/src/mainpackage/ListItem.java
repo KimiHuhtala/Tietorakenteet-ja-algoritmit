@@ -1,5 +1,9 @@
 package mainpackage;
 
+/**
+ * @author Kimi Huhtala
+ */
+
 public class ListItem {
     private String data;
     private ListItem next;

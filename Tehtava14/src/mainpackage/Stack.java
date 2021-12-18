@@ -1,5 +1,9 @@
 package mainpackage;
 
+/**
+ * @author Kimi Huhtala
+ */
+
 public class Stack {
     private ListItem top;
     private int size;
