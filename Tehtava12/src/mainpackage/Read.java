@@ -3,6 +3,10 @@ package mainpackage;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+/**
+ * @author Kimi Huhtala
+ */
+
 public class Read {
 
     static BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
@@ -15,7 +19,7 @@ public class Read {
                 value = stdin.readLine();
                 ok = true;
             } catch (Exception e) {
-                System.out.println("Exception when reading value. Give a new value.");
+                System.out.println("Virhe. Anna uusi arvo.");
                 ok = false;
             }
         }
@@ -31,7 +35,7 @@ public class Read {
                 value = Integer.parseInt(stdin.readLine());
                 ok = true;
             } catch (Exception e) {
-                System.out.println("Incompatible integer. Give a new value.");
+                System.out.println("Virhe. Anna uusi arvo.");
                 ok = false;
             }
         }
@@ -47,7 +51,7 @@ public class Read {
                 value = Double.parseDouble(stdin.readLine());
                 ok = true;
             } catch (Exception e) {
-                System.out.println("Incompatible double, Give a new value.");
+                System.out.println("Virhe. Anna uusi arvo.");
                 ok = false;
             }
         }
